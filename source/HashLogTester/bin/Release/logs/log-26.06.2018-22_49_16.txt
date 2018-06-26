@@ -1,0 +1,10 @@
+Project: Test project
+26.06.2018-22:49:16
+
+Generated with: HashLog v. 1.0: https://github.com/piter10p/HashLog
+===========================================================================================
+
+
+[22:49:16] INFO: Info.
+[22:49:16] WARNING: Warning.
+[22:49:16] ERROR: Error.

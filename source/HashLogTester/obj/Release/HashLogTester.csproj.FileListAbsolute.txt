@@ -1,0 +1,9 @@
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\bin\Release\HashLogTester.exe.config
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\bin\Release\HashLogTester.exe
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\bin\Release\HashLogTester.pdb
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\bin\Release\HashLog.dll
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\bin\Release\HashLog.pdb
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\obj\Release\HashLogTester.csprojResolveAssemblyReference.cache
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\obj\Release\HashLogTester.csproj.CoreCompileInputs.cache
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\obj\Release\HashLogTester.exe
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLogTester\obj\Release\HashLogTester.pdb

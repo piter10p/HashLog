@@ -1,0 +1,6 @@
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\obj\Debug\HashLog.csprojResolveAssemblyReference.cache
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\obj\Debug\HashLog.csproj.CoreCompileInputs.cache
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\bin\Debug\HashLog.dll
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\bin\Debug\HashLog.pdb
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\obj\Debug\HashLog.dll
+I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\obj\Debug\HashLog.pdb
