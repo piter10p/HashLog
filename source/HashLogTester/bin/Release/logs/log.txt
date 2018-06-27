@@ -1,9 +1,9 @@
 Project: Test project 2
-26.06.2018-22:49:16
+27.06.2018-11:15:50
 
 Generated with: HashLog v. 1.0: https://github.com/piter10p/HashLog
 ===========================================================================================
 
 
-[22:49:16] FATAL ERROR: Fatal error
-Fatal error occured. Application will be closed.
+[11:15:50] FATAL ERROR: Fatal error.
+[11:15:50] INFO: Fatal error occured. Application will be closed.

@@ -9,7 +9,7 @@ namespace HashLog
 {
     public class HashLog
     {
-        public const string Version = "1.0";
+        public const string Version = "1.1";
 
         public static void Setup(string projectName)
         {
@@ -34,7 +34,7 @@ namespace HashLog
         public static void LogFatalError(string message)
         {
             Log("FATAL ERROR", message);
-            Output.Send("Fatal error occured. Application will be closed.");
+            LogInformation("Fatal error occured. Application will be closed.");
             Environment.Exit(0);
         }
 
@@ -42,7 +42,7 @@ namespace HashLog
         {
             DateTime actualLocalDateTime = DateTime.Now.ToLocalTime();
             string text = "[" + actualLocalDateTime.ToLongTimeString() + "] " + prefix + ": " + message;
-            Output.Send(text);
+            Output.SendBoth(text);
         }
     }
 }
