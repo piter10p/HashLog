@@ -9,7 +9,7 @@ namespace HashLog
 {
     public class HashLog
     {
-        public const string Version = "1.1";
+        public const string Version = "1.1.1.0";
 
         public static void Setup(string projectName)
         {

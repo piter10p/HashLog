@@ -4,3 +4,9 @@ I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\obj\Release\Hash
 I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\obj\Release\HashLog.dll
 I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\obj\Release\HashLog.pdb
 I:\Backup\Pietras\Visual Studio Projects\HashLog\source\HashLog\obj\Release\HashLog.csprojResolveAssemblyReference.cache
+I:\Backup\Projekty\Visual Studio Projects\HashLog\source\HashLog\bin\Release\HashLog.dll
+I:\Backup\Projekty\Visual Studio Projects\HashLog\source\HashLog\bin\Release\HashLog.pdb
+I:\Backup\Projekty\Visual Studio Projects\HashLog\source\HashLog\obj\Release\HashLog.csprojAssemblyReference.cache
+I:\Backup\Projekty\Visual Studio Projects\HashLog\source\HashLog\obj\Release\HashLog.csproj.CoreCompileInputs.cache
+I:\Backup\Projekty\Visual Studio Projects\HashLog\source\HashLog\obj\Release\HashLog.dll
+I:\Backup\Projekty\Visual Studio Projects\HashLog\source\HashLog\obj\Release\HashLog.pdb

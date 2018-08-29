@@ -10,12 +10,20 @@ namespace HashLog.Outputs
     {
         public static void Setup(string projectName)
         {
-            Console.Title = projectName;
+            try
+            {
+                Console.Title = projectName;
+            }
+            catch { }
         }
 
         public static void Send(string message)
         {
-            Console.WriteLine(message);
+            try
+            {
+                Console.WriteLine(message);
+            }
+            catch { }
         }
     }
 }
