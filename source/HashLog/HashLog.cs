@@ -9,40 +9,65 @@ namespace HashLog
 {
     public class HashLog
     {
-        public const string Version = "1.1.1.0";
-
+        /// <summary>
+        /// Setups Hashlog console and file outputs.
+        /// </summary>
+        /// <param name="projectName">Name of your application used in console and log file.</param>
         public static void Setup(string projectName)
         {
             Output.Setup(projectName);
         }
 
-        public static void LogInformation(string message)
+        /// <summary>
+        /// Logs exception with INFO prefix.
+        /// </summary>
+        /// <param name="exception">Exception to log</param>
+        public static void LogInformation(Exception exception)
         {
-            Log("INFO", message);
+            Log("INFO", exception);
         }
 
-        public static void LogWarning(string message)
+        /// <summary>
+        /// Logs exception with WARNING prefix.
+        /// </summary>
+        /// <param name="exception">Exception to log</param>
+        public static void LogWarning(Exception exception)
         {
-            Log("WARNING", message);
+            Log("WARNING", exception);
         }
 
-        public static void LogError(string message)
+        /// <summary>
+        /// Logs exception with ERROR prefix.
+        /// </summary>
+        /// <param name="exception">Exception to log</param>
+        public static void LogError(Exception exception)
         {
-            Log("ERROR", message);
+            Log("ERROR", exception);
         }
 
-        public static void LogFatalError(string message)
+        /// <summary>
+        /// Logs exception with FATAL ERROR prefix.
+        /// </summary>
+        /// <param name="exception">Exception to log</param>
+        public static void LogFatalError(Exception exception)
         {
-            Log("FATAL ERROR", message);
-            LogInformation("Fatal error occured. Application will be closed.");
-            Environment.Exit(0);
+            Log("FATAL ERROR", exception);
         }
 
-        private static void Log(string prefix, string message)
+        private static void Log(string prefix, Exception exception)
+        {
+            string text = GetTimeText();
+            text += String.Format(" [{0}]: ", prefix);
+            text += MessageBuilder.BuildMessage(exception);
+            Output.SendBoth(text, true);
+        }
+
+        private static string GetTimeText()
         {
             DateTime actualLocalDateTime = DateTime.Now.ToLocalTime();
-            string text = "[" + actualLocalDateTime.ToLongTimeString() + "] " + prefix + ": " + message;
-            Output.SendBoth(text);
+            return String.Format("[{0}]", actualLocalDateTime.ToLongTimeString());
         }
+
+        
     }
 }

@@ -1,3 +1,6 @@
+Version 1.2.0.0
+	*Completly reworked public API. Now HashLog logs Exceptions and the most important informations in it.
+
 Version 1.1.1.0
 	*Fixed problem with throwing exeption when console was not allocated.
 

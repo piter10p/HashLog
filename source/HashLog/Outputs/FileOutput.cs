@@ -18,12 +18,16 @@ namespace HashLog.Outputs
             SetupFile(projectName, logsDirectoryInfo);
         }
 
-        public static void Send(string message)
+        public static void Send(string message, bool newLineAtEnd)
         {
             try
             {
                 StreamWriter streamWriter = File.AppendText(LogDirecotryName + "/" + LogFileName + LogFileExtension);
                 streamWriter.WriteLine(message);
+
+                if(newLineAtEnd)
+                    streamWriter.WriteLine();
+
                 streamWriter.Close();
             }
             catch
@@ -95,13 +99,20 @@ namespace HashLog.Outputs
                 "Project: " + projectName,
                 actualLocalDateTime.ToShortDateString() + "-" + actualLocalDateTime.ToLongTimeString(),
                 "",
-                "Generated with: HashLog v. " + HashLog.Version + ": https://github.com/piter10p/HashLog",
+                "Generated with: HashLog v. " + GetApplicationVersion() + ": https://github.com/piter10p/HashLog",
                 "===========================================================================================",
                 "",
                 ""
             };
 
             System.IO.File.WriteAllLines(logFilePath, headerText);
+        }
+
+        private static string GetApplicationVersion()
+        {
+            System.Reflection.Assembly assembly = System.Reflection.Assembly.GetExecutingAssembly();
+            System.Diagnostics.FileVersionInfo fvi = System.Diagnostics.FileVersionInfo.GetVersionInfo(assembly.Location);
+            return fvi.FileVersion;
         }
     }
 }

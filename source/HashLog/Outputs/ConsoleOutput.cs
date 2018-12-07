@@ -17,11 +17,14 @@ namespace HashLog.Outputs
             catch { }
         }
 
-        public static void Send(string message)
+        public static void Send(string message, bool newLineAtEnd)
         {
             try
             {
                 Console.WriteLine(message);
+
+                if (newLineAtEnd)
+                    Console.WriteLine();
             }
             catch { }
         }

@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MessageBuilder.cs" />
     <Compile Include="HashLog.cs" />
     <Compile Include="Output.cs" />
     <Compile Include="Outputs\ConsoleOutput.cs" />
